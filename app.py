@@ -3,7 +3,7 @@ import requests
 
 
 def send_request(text, length):
-    api_url = 'https://master-ainize-gpt2-tedtalk-dmtburke.endpoint.ainize.ai'
+    api_url = 'https://master-ainize-gpt2-tedtalk-dmtburke.endpoint.ainize.ai/predict'
     files = {
         'base_text': (None, text),
         'length': (None, length),
