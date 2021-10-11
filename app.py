@@ -27,7 +27,7 @@ if st.button("Submit"):
         status_code, response = send_request(base_story, length_slider)
         if status_code == 200:
             prediction = response.json()
-            st.success(prediction["0"])
+            st.success(prediction["prediction"])
         else:
             st.error(str(status_code) + " Error")
 
